@@ -1,1 +1,31 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  padding: 50px;
+}
+#box {
+  background: white;
+  font-size: 72px;
+  max-width: 20rem;
+  border-radius: 50px;
+  height: 5em;
+}
+.top {
+  display: flex;
+  justify-content: start;
+}
+.mid {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: start;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+/*<!--♦♥♠♣--->*/
