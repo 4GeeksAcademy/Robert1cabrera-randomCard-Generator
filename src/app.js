@@ -9,6 +9,7 @@ window.onload = function() {
   //write your code here
   const suites = ["♦", "♥", "♠", "♣"];
   const cardnumbers = [
+    "A",
     "2",
     "3",
     "4",
@@ -30,12 +31,23 @@ window.onload = function() {
   function randomCard(arr) {
     return Math.floor(Math.random() * arr.length);
   }
+
   let suite = suites[randomCard(suites)];
   let num = cardnumbers[randomCard(cardnumbers)];
   let top = document.querySelector("#top");
-  top.innerHTML = suite;
   let number = document.querySelector("#num");
-  number.innerHTML = num;
   let bottom = document.querySelector("#bottom");
+
+  // Add a class to the elements representing the heart and diamond suites
+  if (suite === "♥" || suite === "♦") {
+    top.classList.add("red-suite");
+    bottom.classList.add("red-suite");
+  } else {
+    top.classList.remove("red-suite");
+    bottom.classList.remove("red-suite");
+  }
+
+  top.innerHTML = suite;
+  number.innerHTML = num;
   bottom.innerHTML = suite;
 };

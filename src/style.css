@@ -1,15 +1,18 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background-color: green;
+  background-color: #0e7e12;
   padding: 50px;
 }
 #box {
   background: white;
   font-size: 72px;
   max-width: 20rem;
-  border-radius: 50px;
+  border-radius: 10px;
   height: 5em;
+}
+.red-suite {
+  color: red;
 }
 .top {
   display: flex;
